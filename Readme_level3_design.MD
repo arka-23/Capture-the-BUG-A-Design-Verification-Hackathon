@@ -1,7 +1,5 @@
 
-# Challenges-arka-23
-Challenges-arka-23 created by GitHub Classroom
-# Sequential Multiplier Design Verification
+# Sequential Multiplier Design Verification - Self Designed Bug Detection
 
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
 
