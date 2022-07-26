@@ -1,5 +1,3 @@
-# Challenges-arka-23
-Challenges-arka-23 created by GitHub Classroom
 # MUX Design Verification
 
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
