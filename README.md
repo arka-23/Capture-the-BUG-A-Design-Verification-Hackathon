@@ -1,5 +1,8 @@
 # Capture-the-BUG-A-Design-Verification-Hackathon
 
+![image](https://user-images.githubusercontent.com/70422874/181058525-06d59443-c499-4f71-ab44-208b000e19f0.png)
+
+
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
 
 ![image](https://user-images.githubusercontent.com/70422874/180952260-1ada05b1-fbab-4a89-a619-167a17d35346.png)
