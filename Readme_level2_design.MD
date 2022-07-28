@@ -97,4 +97,9 @@ Updating the design and re-running the test makes the test pass.
 
 ## Verification Strategy
 
+- Checked the device output to illegal input instruction(ie. for a value not in instruction set), and random operand inputs
+- Checked the device output to the first instruction in the python model file, and random operand inputs
+- Checked the device output to the the rest of the instructions in the python model file, and random operand inputs
+
 ## Is the verification complete ?
+Yes
