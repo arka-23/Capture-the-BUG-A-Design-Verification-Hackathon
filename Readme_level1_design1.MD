@@ -1,3 +1,5 @@
+# Challenges-arka-23
+Challenges-arka-23 created by GitHub Classroom
 # MUX Design Verification
 
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
@@ -122,4 +124,9 @@ Updating the design and re-running the test makes the test pass.
 
 ## Verification Strategy
 
+- Checking if all inputs are available, corresponding to the select lines.
+- Checking for duplicate inputs.
+- In test code, inputs chosen in a particular pattern to point out the duplicacies and unavailable inputs.
+
 ## Is the verification complete ?
+ Yes.
