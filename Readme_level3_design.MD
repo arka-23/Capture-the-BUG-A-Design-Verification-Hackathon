@@ -9,7 +9,7 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 
 ## Verification Environment
 
-The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (Sequence Detector module here) which takes in 1-bit inputs *inp_bit* as a sequence synchronized to a clock, a 1-bit *reset* and gives 1-bit output *seq_seen*
+The [CoCoTb](https://www.cocotb.org/) based Python test is developed as explained. The test drives inputs to the Design Under Test (Sequential Multiplier module here) which takes in a 16-bit input *in_MX*, a 9-bit input *in_MY*  synchronized to a clock, a 1-bit *RESET* reset signal and gives 25-bit output *Prod*.
 
 The values are assigned to the input port using 
 ```
