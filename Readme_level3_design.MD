@@ -1,9 +1,11 @@
 
-# Sequential Multiplier Design Verification - Self Designed Bug Detection
+# Challenges-arka-23
+Challenges-arka-23 created by GitHub Classroom
+# Sequential Multiplier Design Verification
 
 The verification environment is setup using [Vyoma's UpTickPro](https://vyomasystems.com) provided for the hackathon.
 
-![image](https://user-images.githubusercontent.com/70422874/180945897-516baeac-d35a-413e-aee1-813ec42048ed.png)
+![image](https://user-images.githubusercontent.com/70422874/181436442-6e03e67f-4287-46d9-8114-0a6016856c60.png)
 
 ## Verification Environment
 
@@ -47,7 +49,7 @@ The values are assigned to the input port using
 
     temp1 = bin(a)   
     print("MULTIPLICAND : ", format(a, "b"))
-    print("ACCUMULATOR OUTPUT WHEN LOADED WITH MULTIPLICAND FOR THE FIRST INSTANCE: ", y[0])
+    print("PRODUCT OUTPUT WHEN ACCUMULATOR IS LOADED WITH MULTIPLICAND FOR THE FIRST INSTANCE: ", y[0])
     
 ```
 
@@ -57,17 +59,17 @@ The assert statement is used for comparing the MUX's outut to the expected value
 
 ## The following error is seen:
 ```
- AssertionError: Value mismatch DUT = 14161 does not match MODEL = 13566. Accumulator loaded with incorrect value, check Load-In block.
+ AssertionError: Value mismatch DUT = 10404 does not match MODEL = 28560. Accumulator loaded with incorrect value, check Load-In block.
  ```
-![image](https://user-images.githubusercontent.com/70422874/180946739-34591fc2-635c-45a3-bee8-39a16315ff28.png)
+![image](https://user-images.githubusercontent.com/70422874/181436776-0d62b956-6ed0-4472-876f-8d6606188efb.png)
  
 ## Test Scenario **(Important)**
 a = random.randint(0, 1024), b = random.randint(0, 255)
 - dut.in_Mx.value = a
 - dut.in_My.value = b       
 - dut_output = dut.Prod.value 
-- Expected Output: expected_value = 13566
-- Observed Output in the DUT: dut_output = 14161
+- Expected Output: expected_value = 28560
+- Observed Output in the DUT: dut_output = 10404
 
 Output mismatches for the above inputs proving that there is a design bug
 
@@ -81,7 +83,7 @@ Accumulator loaded with incorrect value, check Load-In block.
 ## Design Fix
 Updating the design and re-running the test makes the test pass.
 
-![image](https://user-images.githubusercontent.com/70422874/180947476-01b020cb-f5b1-4c1c-a5dd-7050d28b0995.png)
+![image](https://user-images.githubusercontent.com/70422874/181437014-81264a41-1c5c-4840-8414-90bb822a1d9e.png)
 
 Error Introduced:
 
@@ -94,4 +96,11 @@ Corrected Code:
 
 ## Verification Strategy
 
+- DUT outputs observed thoroughly
+- According to design, DUT output is the concatenation of the outputs of Accumulator and shift register
+- According to design, after being reset the first value loaded to the Accumulator is the Multiplicand(other than 0) 
+- Any variation in the above statement reflects that there might be an error in the loading steps
+
 ## Is the verification complete ?
+
+Yes
