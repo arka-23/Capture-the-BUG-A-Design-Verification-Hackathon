@@ -85,5 +85,10 @@ INPUT SEQUENCE - 101011
 
 
 ## Verification Strategy
-
+ - Verilog design code checked thoroughly
+ - From design, it is imminent that once correct sequence is detected, sequence detector gives required output and gets reset, which is in accordance to the design requirement. 
+ - Checking hence done by adding two extra bits(random) at the beginning of the required sequence
+ - More extra bits are not required for verification (this has been realized by studying the verilog code)
+ 
 ## Is the verification complete ?
+ Yes
