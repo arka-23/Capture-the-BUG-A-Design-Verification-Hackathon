@@ -25,7 +25,7 @@ The verification environment is setup using [Vyoma's UpTickPro](https://vyomasys
 - Readme_level2_design.MD
 - Readme_level3_design.MD
 
-All files for the challenges have been updated with the required python test benches.
+All files for the challenges have been updated with the required python test benches in this github classroom link - https://github.com/vyomasystems-lab/challenges-arka-23 (private).
 
 ## Acknowledgement
 1. Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd. - kunalpghosh@gmail.com
